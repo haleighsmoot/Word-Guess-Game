@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--Header-->
+  <!--metatags that have to come first-->
+  
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- CSS-->
+  <link href="Assets/css/style.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+      
+
+  <div id="notebook-paper">
+  <!--Title of Game-->
+  <title>Hang Man</title>
+  </head>
+  <!--End Header-->
+
+  <!--Begin Body 0& Notebook Paper-->
+  <div id="content">
+    <div class="hipsum"> 
+
+  <!--Top Title-->
+    <div class="col-sm-10">
+      <h4 class="text-center">Hangman</h4>
+      </div>
+
+    <!--Hangman Parts-->
+    <p> 
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class='hangContain'>
+        <div class='postUp vanish'></div>
+        <div class='postRight vanish'></div>
+        <div class='rope vanish'></div>
+        <div class='head vanish'></div>
+        <div class='body vanish'></div>
+        <div class='leftArm vanish'></div>
+        <div class='rightArm vanish'></div>
+        <div class='leftLeg vanish'></div>
+        <div class='rightLeg vanish'></div>
+        <div class='floor vanish'></div>
+          </div>
+      </div>
+      </div>
+    </p>
+      <!--Game Instructions-->
+      <div class="col-sm-10">
+        <h4 class="text-center">Instructions:</h4>
+        <p class="description"></p> 
+          The computer will think of a word, and you will try to guess the word a letter at a time. You will press what letter you want to guess by pressing the letters on the keyboard. If the letter is right you will see it appear below on the screen. If the letter is wrong you will get a strike that brings you closer to losing. </span>
+        </p>
+        <!--Game Letters-->
+        <div class="gameLetters">
+          <span>"The word is...": </span>
+        </div>
+      </div>
+      </div>
+    </div>
+    <!--Game Stats-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-10">
+          <div class="counter">
+            <p id='chances'>Chances Remaining: 10</p>
+            <p id='correct'>Correct: 0</p>
+            <p id='incorrect'>Incorrect: 0 </p>
+          </div>
+        </div>
+        <!--Key Board not aligning how I want-->
+        <div class="container-fluid">
+        <div class="keyboard">
+            <div class="keyboardRow">
+        <div class="col-sm-12 text-center">
+        <h2 class='letters'>A</h2>
+        <h2 class='letters'>B</h2>
+        <h2 class='letters'>C</h2>
+        <h2 class='letters'>D</h2>
+        <h2 class='letters'>E</h2>
+        <h2 class='letters'>F</h2>
+        <h2 class='letters'>G</h2>
+        <h2 class='letters'>H</h2>
+        <h2 class='letters'>I</h2>
+        <h2 class='letters'>J</h2>
+        <h2 class='letters'>K</h2>
+        <h2 class='letters'>L</h2>
+        <h2 class='letters'>M</h2>
+        </div>
+        <div class="keyboardrow">
+          <div class="col-sm-12 text-center">
+            <h2 class='letters'>N</h2>
+            <h2 class='letters'>O</h2>
+            <h2 class='letters'>P</h2>
+            <h2 class='letters'>Q</h2>
+            <h2 class='letters'>R</h2>
+            <h2 class='letters'>S</h2>
+            <h2 class='letters'>T</h2>
+            <h2 class='letters'>U</h2>
+            <h2 class='letters'>V</h2>
+            <h2 class='letters'>W</h2>
+            <h2 class='letters'>X</h2>
+            <h2 class='letters'>Y</h2>
+            <h2 class='letters'>Z</h2>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    </div>
+    </div>
+
+    <!--Jquery, bootstrap , java src here-->
+
+    <script src='https://code.jquery.com/jquery-2.2.1.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src='Assets/javascript/game.js'></script>
+  
+
+  <!--End Body-->
+</html>
